@@ -69,3 +69,27 @@ body {
 
 }
  
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container .circle {
+        width: 120px;
+        height: 120px;
+    }
+    .container .circle::after {
+        width: 60px;
+        height: 60px;
+        border-width: 8px;
+    }
+    .container .circle .number {
+        font-size: 1.2em;
+    }
+    .container .circle h4 {
+        font-size: 0.7em;
+    }
+    body {
+        padding: 20px;
+    }
+}
